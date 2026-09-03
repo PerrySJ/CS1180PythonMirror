@@ -20,10 +20,10 @@ curWeightedGradeSum = (zbG * zbW) + (attendanceG * attendanceW) + (labG * labW) 
 
 avgGrade = (curWeightedGradeSum) /curWeightSum
 
-print(avgGrade)
+print(f"{avgGrade: .2f}")
 
 excludedWeight = finalW
 desiredGrade = 90
 
 neededPercent =((desiredGrade * 100) - curWeightedGradeSum) / excludedWeight
-print(neededPercent)
+print(f"{neededPercent: .2f}")
