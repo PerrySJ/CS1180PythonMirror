@@ -24,11 +24,11 @@ curWeightedGradeSum = (zbG * zbW) + (attendanceG * attendanceW) + (labG * labW) 
 
 avgGrade = (curWeightedGradeSum) /curWeightSum
 
-print(f"{avgGrade: .2f}")
+print(f"You have a {avgGrade: .2f}% so far")
 
 excludedWeight = finalW
-desiredGrade = 90
+desiredGrade = float(input("What is your desired grade for the class "))
 
 neededPercent =((desiredGrade * 100) - curWeightedGradeSum) / excludedWeight
-print(f"{neededPercent: .2f}")
+print(f"To get a {desiredGrade}% for this class you need a {neededPercent: .2f}% for your final exam")
 
